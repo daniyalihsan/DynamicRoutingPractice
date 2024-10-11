@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Details</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="main width-full text-white min-h-screen bg-zinc-900 mt-5 ml-5 rounded-xl px-5 py-3">
+    <a href="http://localhost:8080/files" class="bg-blue-500">Go back to Home page.</a>
+    <form action="/update" method="put">
+    <input
+    class="block px-5 py-2 outline-none w-full rounded-md bg-zinc-800" type="text" value="<%=fileName%>"
+    name="title"
+    placeholder="Enter role"/>
+    <textarea class="block mt-3 outline-none w-full rounded-md bg-zinc-800 resize-none px-5 py-2 by-zinc-800"
+            name="details" 
+            placeholder="Input task details here" ><%=fileData%></textarea>
+        </form>
+    </body>
+</html>

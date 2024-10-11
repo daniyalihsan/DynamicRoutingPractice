@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/edit" method="put">
+        <input
+        class="block px-5 py-2 outline-none w-full rounded-md bg-zinc-800" type="text" value="<%=fileName%>"
+        name="title"placeholder="Enter role"/>
+        <textarea class="block mt-3 outline-none w-full rounded-md bg-zinc-800 resize-none px-5 py-2 by-zinc-800"
+                name="details"placeholder="Input task details here" ><%=fileData%></textarea>
+    </form>
+</body>
+</html>
